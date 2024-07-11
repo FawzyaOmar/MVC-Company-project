@@ -1,0 +1,22 @@
+﻿@model EmployeeViewModel
+
+@{
+    ViewData["Title"] = "Update";
+}
+
+<h1>Update Employee</h1>
+<br />
+
+<form asp-action="Update" method="post" >
+    <partial name="PartialViews/CreateOrUpdatePartialView" />
+
+    <button type="submit" class="btn btn-primary">Update Employee</button>
+    @* <a asp-action="Index" class="btn btn-secondary">Back to List</a> *@
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+
+

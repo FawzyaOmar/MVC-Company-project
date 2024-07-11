@@ -1,0 +1,24 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Demo.PL.Models
+{
+    public class SignInViewModel
+    {
+        [Required]
+        [EmailAddress(ErrorMessage = "Invaild format for email")]
+        public string Email { get; set; }
+        [Required]
+        [MaxLength(6)]
+        public string Password { get; set; }
+       
+        
+        public bool RememberMe { get; set; }
+
+
+
+
+
+
+
+    }
+}

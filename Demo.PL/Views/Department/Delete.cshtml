@@ -1,0 +1,24 @@
+﻿@* @model DEMO.DAL.Entities.Department
+ *@
+
+ @model Demo.PL.Models.DepartmentViewModel
+
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this department?</h3>
+<div>
+    <h4>Department ID: @Model.Id</h4>
+    <h4>Department Name: @Model.Name</h4>
+    <h4>Department Code: @Model.Code</h4>
+
+    <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        
+    </form>
+</div>
+
+
+
+
+
